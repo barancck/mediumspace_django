@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <link rel="icon" href="{% static 'images/logo.svg' %}" type="image/x-icon">
+
     <!-- Stylesheets-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:400,500,600%7CTeko:300,400,500%7CMaven+Pro:500">
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
@@ -22,7 +23,7 @@
         <!-- Swiper-->
         <section class="section swiper-container swiper-slider swiper-slider-classic" data-loop="true" data-autoplay="4859" data-simulate-touch="true" data-direction="vertical" data-nav="false">
           <div class="swiper-wrapper text-center">
-            <div class="swiper-slide" data-slide-bg="static/images/oklahoma.webp">
+            <div class="swiper-slide" data-slide-bg="static/images/sliderfire.jpg">
               <div class="swiper-slide-caption section-md">
                 <div class="container">
                   <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">FIRE DETECTION & PREDICTION SYSTEMS</h1>
@@ -30,7 +31,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide" data-slide-bg="static/images/slider-1-slide-4-1770x742.jpg">
+            <div class="swiper-slide" data-slide-bg="static/images/a-team.jpg">
               <div class="swiper-slide-caption section-md">
                 <div class="container">
                   <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Experienced Team</h1>
@@ -122,21 +123,21 @@
       <!-- Latest Projects-->
       <section class="section section-sm section-fluid bg-default text-center" id="projects">
         <div class="container-fluid">
-          <h2 class="wow fadeInLeft">Latest Projects</h2>
-          <p class="quote-jean wow fadeInRight" data-wow-delay=".1s">In our portfolio, you can browse the latest products developed for our clients for different corporate purposes. Our qualified team of interface designers and software developers is always ready to create something unique for you.</p>
+          <h2 class="wow fadeInLeft">How Does It Work?</h2>
+          <p class="quote-jean wow fadeInRight" data-wow-delay=".1s">The images demonstrate the performance of our machine learning models for environmental monitoring. The first set showcases the effectiveness of our smoke detection model, identifying regions with smoke to aid in early wildfire detection. The second set highlights the accuracy of our forest detection model, pinpointing areas covered by dense vegetation.</p>
           <div class="isotope-filters isotope-filters-horizontal">
             <button class="isotope-filters-toggle button button-md button-icon button-icon-right button-default-outline button-wapasha" data-custom-toggle="#isotope-3" data-custom-toggle-hide-on-blur="true" data-custom-toggle-disable-on-blur="true"><span class="icon fa fa-caret-down"></span>Filter</button>
             <ul class="isotope-filters-list" id="isotope-3">
               <li><a class="active" href="#" data-isotope-filter="*" data-isotope-group="gallery">All</a></li>
               <li><a href="#" data-isotope-filter="Type 1" data-isotope-group="gallery">Smoke Detection</a></li>
               <li><a href="#" data-isotope-filter="Type 2" data-isotope-group="gallery">Forest Detection</a></li>
-              <li><a href="#" data-isotope-filter="Type 3" data-isotope-group="gallery">Fire Prediction</a></li>
+         <!--     <li><a href="#" data-isotope-filter="Type 3" data-isotope-group="gallery">Fire Prediction</a></li> -->
          <!-- <li><a href="#" data-isotope-filter="Type 4" data-isotope-group="gallery">UX and Design</a></li> -->
             </ul>
           </div>
           <div class="row row-30 isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group">
-            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 4">
-              <!-- Thumbnail Classic-->
+            <!--<div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 4">
+               Thumbnail Classic
               <article class="thumbnail thumbnail-classic thumbnail-md">
                 <div class="thumbnail-classic-figure"><img src="static/images/fullwidth-gallery-1-420x350.jpg" alt="" width="420" height="350"/>
                 </div>
@@ -147,35 +148,93 @@
                   <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
                 </div>
               </article>
-            </div>
+            </div> 
+          -->
+
             <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 1" data-wow-delay=".1s">
               <!-- Thumbnail Classic-->
               <article class="thumbnail thumbnail-classic thumbnail-md">
-                <div class="thumbnail-classic-figure"><img src="static/images/fullwidth-gallery-2-420x350.jpg" alt="" width="420" height="350"/>
+                <div class="thumbnail-classic-figure"><img src="static/images/RawSmoke.jpg" alt="" width="420" height="350"/>
                 </div>
                 <div class="thumbnail-classic-caption">
                   <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="static/images/grid-gallery-2-1200x800-original.jpg" data-lightgallery="item"><img src="static/images/fullwidth-gallery-2-420x350.jpg" alt="" width="420" height="350"/></a>
-                    <h5 class="thumbnail-classic-title"><a href="#">Mobile Finance</a></h5>
+                    <h5 class="thumbnail-classic-title"><a href="#">Forest Fire Image</a></h5>
                   </div>
-                  <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
+                  <p class="thumbnail-classic-text">Input image presenting smoke from a fire.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 1" data-wow-delay=".1s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="static/images/FireEdit.png" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="static/images/grid-gallery-2-1200x800-original.jpg" data-lightgallery="item"><img src="static/images/fullwidth-gallery-2-420x350.jpg" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">Smoke Detected</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">Output image from our ML model pinpointing the region with smoke.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 1" data-wow-delay=".1s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="static/images/RawNoSmoke.jpg" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="static/images/grid-gallery-2-1200x800-original.jpg" data-lightgallery="item"><img src="static/images/fullwidth-gallery-2-420x350.jpg" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">Cloud Image</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">Input image without any smoke, but with a sparse cloud.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 1" data-wow-delay=".1s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="static/images/NoFireEdit.png" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="static/images/grid-gallery-6-1200x800-original.jpg" data-lightgallery="item"><img src="static/images/fullwidth-gallery-6-420x350.jpg" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">Cloud Image Output </a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">Output image demonstrating that our model does not confuse clouds with smoke. No any smoke detected</p>
                 </div>
               </article>
             </div>
             <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 2" data-wow-delay=".2s">
               <!-- Thumbnail Classic-->
               <article class="thumbnail thumbnail-classic thumbnail-md">
-                <div class="thumbnail-classic-figure"><img src="static/images/fullwidth-gallery-3-420x350.jpg" alt="" width="420" height="350"/>
+                <div class="thumbnail-classic-figure"><img src="static/images/Forest1.jpg" alt="" width="420" height="350"/>
                 </div>
                 <div class="thumbnail-classic-caption">
                   <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="static/images/grid-gallery-3-1200x800-original.jpg" data-lightgallery="item"><img src="static/images/fullwidth-gallery-3-420x350.jpg" alt="" width="420" height="350"/></a>
-                    <h5 class="thumbnail-classic-title"><a href="#">Q-Manage</a></h5>
+                    <h5 class="thumbnail-classic-title"><a href="#">Forest Tile</a></h5>
                   </div>
-                  <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
+                  <p class="thumbnail-classic-text">Image classified as a forest by our model.</p>
                 </div>
               </article>
             </div>
-            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 3" data-wow-delay=".3s">
+
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 2" data-wow-delay=".2s">
               <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="static/images/noforest.jpeg" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="static/images/grid-gallery-7-1200x800-original.jpg" data-lightgallery="item"><img src="static/images/fullwidth-gallery-7-420x350.jpg" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">Random Tile</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">Image classified as a sea by our model.</p>
+                </div>
+              </article>
+            </div>
+
+          <!--  <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 3" data-wow-delay=".3s">
+              
               <article class="thumbnail thumbnail-classic thumbnail-md">
                 <div class="thumbnail-classic-figure"><img src="static/images/fullwidth-gallery-4-420x350.jpg" alt="" width="420" height="350"/>
                 </div>
@@ -188,7 +247,7 @@
               </article>
             </div>
             <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 3">
-              <!-- Thumbnail Classic-->
+              
               <article class="thumbnail thumbnail-classic thumbnail-md">
                 <div class="thumbnail-classic-figure"><img src="static/images/fullwidth-gallery-5-420x350.jpg" alt="" width="420" height="350"/>
                 </div>
@@ -200,34 +259,10 @@
                 </div>
               </article>
             </div>
-            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 1" data-wow-delay=".1s">
-              <!-- Thumbnail Classic-->
-              <article class="thumbnail thumbnail-classic thumbnail-md">
-                <div class="thumbnail-classic-figure"><img src="static/images/fullwidth-gallery-6-420x350.jpg" alt="" width="420" height="350"/>
-                </div>
-                <div class="thumbnail-classic-caption">
-                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="static/images/grid-gallery-6-1200x800-original.jpg" data-lightgallery="item"><img src="static/images/fullwidth-gallery-6-420x350.jpg" alt="" width="420" height="350"/></a>
-                    <h5 class="thumbnail-classic-title"><a href="#">MPlanner</a></h5>
-                  </div>
-                  <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 2" data-wow-delay=".2s">
-              <!-- Thumbnail Classic-->
-              <article class="thumbnail thumbnail-classic thumbnail-md">
-                <div class="thumbnail-classic-figure"><img src="static/images/fullwidth-gallery-7-420x350.jpg" alt="" width="420" height="350"/>
-                </div>
-                <div class="thumbnail-classic-caption">
-                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="static/images/grid-gallery-7-1200x800-original.jpg" data-lightgallery="item"><img src="static/images/fullwidth-gallery-7-420x350.jpg" alt="" width="420" height="350"/></a>
-                    <h5 class="thumbnail-classic-title"><a href="#">Alice Messenger</a></h5>
-                  </div>
-                  <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
-                </div>
-              </article>
-            </div>
+
+
             <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 3" data-wow-delay=".3s">
-              <!-- Thumbnail Classic-->
+              
               <article class="thumbnail thumbnail-classic thumbnail-md">
                 <div class="thumbnail-classic-figure"><img src="static/images/fullwidth-gallery-8-420x350.jpg" alt="" width="420" height="350"/>
                 </div>
@@ -239,6 +274,7 @@
                 </div>
               </article>
             </div>
+          -->
           </div>
         </div>
       </section>
@@ -306,64 +342,55 @@
           <div class="row row-sm row-30 justify-content-center">
             <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight">
               <!-- Team Classic-->
-              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="static/images/baran.jpg" alt="" width="420" height="424"/></a>
+              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="static/images/a-baran-edit-copy.jpg" alt="" width="420" height="424"/></a>
                 <div class="team-classic-caption">
                   <h4 class="team-classic-name"><a href="#">Baran Çiçek</a></h4>
-                  <p class="team-classic-status">Chief Executive Officer</p>
+                  <p class="team-classic-status">Cloud Engineer</p>
                 </div>
               </article>
             </div>
             <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".1s">
               <!-- Team Classic-->
-              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="static/images/team-12-420x424.jpg" alt="" width="420" height="424"/></a>
+              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="static/images/a-brijesh-edit-copy.jpg" alt="" width="420" height="424"/></a>
                 <div class="team-classic-caption">
-                  <h4 class="team-classic-name"><a href="#">Jill Peterson</a></h4>
-                  <p class="team-classic-status">UI Designer</p>
+                  <h4 class="team-classic-name"><a href="#">Brijesh Pandya</a></h4>
+                  <p class="team-classic-status">Machine Learning Engineer</p>
                 </div>
               </article>
             </div>
             <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".2s">
               <!-- Team Classic-->
-              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="static/images/team-13-420x424.jpg" alt="" width="420" height="424"/></a>
+              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="static/images/a-gabri-edit-copy.jpg" alt="" width="420" height="424"/></a>
                 <div class="team-classic-caption">
-                  <h4 class="team-classic-name"><a href="#">Sam Robinson</a></h4>
-                  <p class="team-classic-status">Senior Developer</p>
+                  <h4 class="team-classic-name"><a href="#">Gabriela Dimitrova</a></h4>
+                  <p class="team-classic-status">Computer Vision</p>
                 </div>
               </article>
             </div>
             <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight">
               <!-- Team Classic-->
-              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="static/images/baran.jpg" alt="" width="420" height="424"/></a>
+              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="static/images/a-ivan-copy.jpg" alt="" width="420" height="424"/></a>
                 <div class="team-classic-caption">
-                  <h4 class="team-classic-name"><a href="#">Baran Çiçek</a></h4>
-                  <p class="team-classic-status">Chief Executive Officer</p>
+                  <h4 class="team-classic-name"><a href="#">Ivan Popov</a></h4>
+                  <p class="team-classic-status">R&D</p>
                 </div>
               </article>
             </div>
-            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".1s">
+            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight">
               <!-- Team Classic-->
-              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="images/team-12-420x424.jpg" alt="" width="420" height="424"/></a>
+              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="static/images/a-lui-edit-copy.jpg" alt="" width="420" height="424"/></a>
                 <div class="team-classic-caption">
-                  <h4 class="team-classic-name"><a href="#">Jill Peterson</a></h4>
-                  <p class="team-classic-status">UI Designer</p>
+                  <h4 class="team-classic-name"><a href="#">Luis Fermoselle</a></h4>
+                  <p class="team-classic-status">Business Development Manager</p>
                 </div>
               </article>
             </div>
             <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".2s">
               <!-- Team Classic-->
-              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="static/images/team-13-420x424.jpg" alt="" width="420" height="424"/></a>
+              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="static/images/a-svetan-edit-copy.jpg" alt="" width="420" height="424"/></a>
                 <div class="team-classic-caption">
-                  <h4 class="team-classic-name"><a href="#">Sam Robinson</a></h4>
-                  <p class="team-classic-status">Senior Developer</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".3s">
-              <!-- Team Classic-->
-              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="static/images/team-14-420x424.jpg" alt="" width="420" height="424"/></a>
-                <div class="team-classic-caption">
-                  <h4 class="team-classic-name"><a href="#">Mary Lee</a></h4>
-                  <p class="team-classic-status">Software Developer</p>
+                  <h4 class="team-classic-name"><a href="#">Tsvetan Kacarov</a></h4>
+                  <p class="team-classic-status">Data Miner</p>
                 </div>
               </article>
             </div>
@@ -427,14 +454,14 @@
               <!-- Quote Modern-->
               <article class="quote-modern quote-modern-custom">
                 <div class="unit unit-spacing-md align-items-center">
-                  <div class="unit-left"><a class="quote-modern-figure" href="#"><img class="img-circles" src="static/images/user-11-75x75.jpg" alt="" width="75" height="75"/></a></div>
+                  <div class="unit-left"><a class="quote-modern-figure" href="#"><img class="img-circles" src="static/images/krasi.jpg" alt="" width="75" height="75"/></a></div>
                   <div class="unit-body">
-                    <h4 class="quote-modern-cite"><a href="#">Catherine Williams</a></h4>
-                    <p class="quote-modern-status">Regular client</p>
+                    <h4 class="quote-modern-cite"><a href="#">Krasimir Stoev</a></h4>
+                    <p class="quote-modern-status">Senior AI Developer at EnduroSat</p>
                   </div>
                 </div>
                 <div class="quote-modern-text">
-                  <p class="q">RatherApp offers a high caliber of resources skilled in Microsoft Azure .NET, mobile and Quality Assurance. They became our true business partners over the past three years.</p>
+                  <p class="q"><strong>EnduroSat</strong> fully supports the innovative forest fire prediction and smoke detection solution presented by your startup. We acknowledge the critical importance of minimizing unnecessary data downlinking and the valuable role your service plays in early fire detection.</p>
                 </div>
               </article>
             </div>
@@ -442,14 +469,14 @@
               <!-- Quote Modern-->
               <article class="quote-modern quote-modern-custom">
                 <div class="unit unit-spacing-md align-items-center">
-                  <div class="unit-left"><a class="quote-modern-figure" href="#"><img class="img-circles" src="static/images/user-12-75x75.jpg" alt="" width="75" height="75"/></a></div>
+                  <div class="unit-left"><a class="quote-modern-figure" href="#"><img class="img-circles" src="static/images/vanessa.jpg" alt="" width="75" height="75"/></a></div>
                   <div class="unit-body">
-                    <h4 class="quote-modern-cite"><a href="#">Rupert Wood</a></h4>
-                    <p class="quote-modern-status">Regular client</p>
+                    <h4 class="quote-modern-cite"><a href="#">Vanessa Stoynova</a></h4>
+                    <p class="quote-modern-status">Embedded Software Developer at EnduroSat</p>
                   </div>
                 </div>
                 <div class="quote-modern-text">
-                  <p class="q">RatherApp powered us with a competent team to develop products for banking services. The team has been delivering results within budget and time, which is amazing.</p>
+                  <p class="q"><strong>EnduroSat</strong> is pleased to endorse the forward-thinking forest fire prediction and smoke detection solution proposed by your startup. We recognize the significant impact of efficient data handling and the crucial value of your service in safeguarding our environment.</p>
                 </div>
               </article>
             </div>
@@ -464,7 +491,7 @@
                   </div>
                 </div>
                 <div class="quote-modern-text">
-                  <p class="q">RatherApp is a highly skilled and uniquely capable firm with multitudes of talent on-board. We have collaborated on a number of diverse projects that have been a great success.</p>
+                  <p class="q">----------</p>
                 </div>
               </article>
             </div>
@@ -472,7 +499,7 @@
         </div>
       </section>
 
-      <!-- Pricing-->
+      <!-- Pricing
       <section class="section section-sm section-bottom-70 section-fluid bg-default">
         <div class="container">
           <h2>Pricing</h2>
@@ -541,7 +568,7 @@
           </div>
         </div>
       </section>
-
+      -->
       <!-- Latest blog posts-->
       <section class="section section-sm bg-default" id="news">
         <div class="container">
@@ -549,32 +576,32 @@
           <div class="row row-45">
             <div class="col-sm-6 col-lg-4 wow fadeInLeft">
               <!-- Post Modern-->
-              <article class="post post-modern"><a class="post-modern-figure" href="#"><img src="static/images/post-10-370x307.jpg" alt="" width="370" height="307"/>
+              <article class="post post-modern"><a class="post-modern-figure" href="#"><img src="static/images/eagle.jpeg" alt="" width="370" height="307"/>
                   <div class="post-modern-time">
-                    <time datetime="2019-07-04"><span class="post-modern-time-month">07</span><span class="post-modern-time-number">04</span></time>
+                    <time datetime="2019-07-04"><span class="post-modern-time-month">08</span><span class="post-modern-time-number">08</span></time>
                   </div></a>
-                <h4 class="post-modern-title"><a href="#">Benefits of Async/Await</a></h4>
-                <p class="post-modern-text">Asynchronous functions are a good and bad thing in JavaScript. The good side is that asynchronous functions are non-blocking and...</p>
+                <h4 class="post-modern-title"><a href="#">The Eagle Bluff Wildfire</a></h4>
+                <p class="post-modern-text">The Eagle Bluff Fire, which occurred in 2023, significantly impacted the regions around Osoyoos in British Columbia and Oroville in Washington State. The wildfire started on July 29, 2023, and quickly spread, prompting evacuation alerts and orders for numerous properties.</p>
               </article>
             </div>
             <div class="col-sm-6 col-lg-4 wow fadeInLeft" data-wow-delay=".1s">
               <!-- Post Modern-->
-              <article class="post post-modern"><a class="post-modern-figure" href="#"><img src="static/images/post-11-370x307.jpg" alt="" width="370" height="307"/>
+              <article class="post post-modern"><a class="post-modern-figure" href="#"><img src="static/images/canberra.jpeg" alt="" width="370" height="307"/>
                   <div class="post-modern-time">
-                    <time datetime="2019-07-17"><span class="post-modern-time-month">07</span><span class="post-modern-time-number">17</span></time>
+                    <time datetime="2019-12-17"><span class="post-modern-time-month">12</span><span class="post-modern-time-number">17</span></time>
                   </div></a>
-                <h4 class="post-modern-title"><a href="#">Key Considerations of iPaaS</a></h4>
-                <p class="post-modern-text">Digital transformation requires cloud appropriate adoption, legacy IT systems modernization, and Agile-based methodologies for faster...</p>
+                <h4 class="post-modern-title"><a href="#">The Clear Range Fire</a></h4>
+                <p class="post-modern-text">Fires burned across an area eight times as big as the 2019–20 Black Summer bushfires that tore through 10 million hectares in southeast Australia. My research shows the 2023 fires burned more than 84 million hectares of desert and savannah in northern Australia.</p>
               </article>
             </div>
             <div class="col-sm-6 col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
               <!-- Post Modern-->
-              <article class="post post-modern"><a class="post-modern-figure" href="#"><img src="static/images/post-12-370x307.jpg" alt="" width="370" height="307"/>
+              <article class="post post-modern"><a class="post-modern-figure" href="#"><img src="static/images/amazon.jpeg" alt="" width="370" height="307"/>
                   <div class="post-modern-time">
-                    <time datetime="2019-07-22"><span class="post-modern-time-month">07</span><span class="post-modern-time-number">22</span></time>
+                    <time datetime="2019-07-22"><span class="post-modern-time-month">07</span><span class="post-modern-time-number">15</span></time>
                   </div></a>
-                <h4 class="post-modern-title"><a href="#">Never Stop Optimizing Your Code</a></h4>
-                <p class="post-modern-text">In this tutorial, we will discuss the Hibernate Query Language. HQL is an object-oriented query language. Hibernate Query...</p>
+                <h4 class="post-modern-title"><a href="#">Amacro Fire Amazonas</a></h4>
+                <p class="post-modern-text">From January through June, Brazil recorded 13,489 wildfires in the Amazon, according to satellite data from the national space agency. That is 61 percent more fires than during the first half of last year. And the wildfire season has yet to reach its peak, which usually comes in August or September.</p>
               </article>
             </div>
           </div>

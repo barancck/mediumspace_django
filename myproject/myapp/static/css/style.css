@@ -9906,7 +9906,7 @@ h2.title-modern > span {
 
 .team-classic-figure img {
 	width: 100%;
-	filter: grayscale(100%);
+	
 	transition: all .3s ease;
 }
 

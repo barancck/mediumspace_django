@@ -1,9 +1,15 @@
-<div class="preloader">
-  <div class="preloader-body">
-    <div class="cssload-container"><span></span><span></span><span></span><span></span>
-    </div>
-  </div>
-</div>
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" href="{% static 'images/logo.svg' %}" type="image/x-icon">
+</head>
+<body>
+  
+
 
 <!-- <a class="section section-banner text-center d-none d-xl-block" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" style="background-image: url(images/banner/banner-bg-02-1920x60.jpg); background-image: -webkit-image-set( url(images/banner/banner-bg-02-1920x60.jpg) 1x, url(images/banner/banner-bg-02-3840x120.jpg) 2x )" target="_blank"><img src="images/banner/banner-fg-02-1600x60.png" srcset="images/banner/banner-fg-02-1600x60.png 1x, images/banner/banner-fg-02-3200x120.png 2x" alt="" width="1600" height="310"></a> -->
 <!-- Page Header-->
@@ -18,7 +24,11 @@
             <!-- RD Navbar Toggle-->
             <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
             <!-- RD Navbar Brand-->
-            <div class="rd-navbar-brand"><a class="brand" href="index.html"><img src="static/images/mediumai_logo.svg" alt="" width="223" height="50"/></a></div>
+            <div class="rd-navbar-brand">
+              <a class="brand" href="{% url 'index' %}">
+                  <img src="{% static 'images/mediumai_logo.svg' %}" alt="MediumAI Logo" width="223" height="50"/>
+              </a>
+          </div>
           </div>
           <div class="rd-navbar-main-element">
             <div class="rd-navbar-nav-wrap">
@@ -48,3 +58,13 @@
 </header>
 
   
+
+
+</body>
+</html>
+<div class="preloader">
+  <div class="preloader-body">
+    <div class="cssload-container"><span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+</div>
