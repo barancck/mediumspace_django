@@ -1,0 +1,5 @@
+dockerfile
+Dockerfile
+.DS_Store
+.dockerignore
+venv
