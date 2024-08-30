@@ -31,7 +31,7 @@ services:
       - ./nginx/active_confs:/etc/nginx/conf.d
       - ./backend/all_static_files:/static  # serving static files via nginx
       - ./backend/all_media_files:/media  ## serving static files via nginx
-      - /etc/letsencrypt/live/firetap:/etc/nginx/ssl # storing ssl certificates #should be :ro in prod
+      - /etc/nginx/ssl:/etc/nginx/ssl # storing ssl certificates #should be :ro in prod
 
       # - ./nginx/dummy:/dummy
       # - ./nginx:/etc/nginx/conf.d/default.conf:ro  #:ro == read-only #bir süreliğine devre dışı bırakıyorum güvenlik için ileride tekrardan ayarlayacağım
