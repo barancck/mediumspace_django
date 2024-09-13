@@ -1,0 +1,44 @@
+#NOTLAR: 1- #CMD CONTAINER ÇALIŞTIRILIRKEN UYGULANAN BİR KOMUT
+# 2- RUN SADECE IMAGE BUILD EDİLİRKEN ÇALIŞTIRILAN BİR KOMUT
+
+
+FROM python:3.12-bullseye
+
+# set work directory
+# WORKDIR /django_app ## docker-compose daki working_dir aynı işi görüyor
+
+# set environment variables
+ENV PYTHONDONTWRITEBYTECODE = 1
+ENV PYTHONUNBUFFERED = 1
+
+# install dependencies
+RUN apt-get -y update && apt-get -y upgrade 
+RUN apt-get -y install gettext
+RUN apt-get -y install cron 
+RUN apt-get -y install nano
+
+RUN pip3 install --upgrade pip
+RUN pip3 install --upgrade setuptools
+
+# RUN sudo apt-get install libpq-dev python-dev 
+# RUN apk --no-cache add musl-dev g++
+
+# # pypi psycopg lib dependencies(old)
+# RUN apk update
+# RUN apk add postgresql-dev gcc python3-dev jpeg-dev zlib-dev
+
+# pypi psycopg lib dependencies(new)
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+#COPY KOMUTUNDAKİ İLK KISIM BU PROJE KONUMUNDA KOPYALAYACAĞI KAYNAĞIN ADRESİ İKİNCİ KISIM İSE CONTAINER DAKİ KURACAĞI DESTINITION ADRESİ
+# COPY requirements.txt . komutunun anlamı proje dosyasındaki varsayılan ana directorydeki requirements.txt yi alıp docker makinesindeki mevcut konuma(varsayılan directory oluyor bu durumda (/django)) kopyalıyor 
+# COPY . .  
+COPY requirements.txt .
+
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+# CMD [ "python3", "backend/manage.py", "runserver", "0.0.0.0:8000"]
+
