@@ -11,9 +11,10 @@ services:
     env_file:
       - ./backend/z_env_files/.env
     environment:
-      - CURRENT_ENVIRONMENT=DEV
+      - TEST=TEST
+      # - CURRENT_ENV=DEV
     working_dir: /firetap
-    command: sh -c "python manage.py collectstatic --no-input && gunicorn myproject.wsgi --bind 0.0.0.0:8888"
+    command: sh -c "python manage.py collectstatic --no-input && gunicorn myproject.wsgi --bind 0.0.0.0:8888 --reload"
     # command: sh -c "python manage.py collectstatic --no-input && python manage.py runserver 0.0.0.0:8888"
     restart: unless-stopped
     # depends_on:
